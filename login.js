@@ -1,14 +1,25 @@
 function validate(){
-    var username=document.getElementById("uname").value;
+    var username=document.getElementById("uname");
     var pass=document.getElementById('pass').value;
 
-    if(username==""||  pass==""    ){
-        alert("username,pass should not be blank and should not exceed 10 char");
-        return false;
-    }
-    else{
-        return true;
-    }
+     if(username.value.trim()==""){
+         alert("Blank username");
+         username.style.border="solid 2px red";
+         return false;
+     }
+     else if(pass.trim()==""){
+         alert("password cant be blank")
+         return false;
+     }
+     else if(pass.trim().length<5){
+         alert("password too short")
+         return false;
+     }
+     else{
+         username.style.border="solid 2px green"
+         return true;
+     }
+
 
 
 }
