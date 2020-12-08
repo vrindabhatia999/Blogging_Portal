@@ -1,6 +1,8 @@
+ 
 div{
     box-shadow: 3px 3px 2px 2px rgb(104, 86, 109);
-    padding: 20px;
+    padding: 60px;
+    background-color: seagreen;
     margin-top: 10%;
     box-sizing: border-box;
     width: 400px;
@@ -9,9 +11,5 @@ div{
     align-content: center;
     margin-right: auto;
     margin-left: auto;
-}
-body{
-    background: radial-gradient( rgb(197, 151, 211),white);
-    background-attachment: fixed;
-    
+    height: 300px;
 }
