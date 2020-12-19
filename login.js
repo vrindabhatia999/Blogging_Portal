@@ -29,9 +29,13 @@ function validate(){
 
 
 }
+
+
 function addToBlog(){
     var area=document.getElementById('area').value;
     var blog=document.getElementById('blogs');
 
     blog.innerHTML=area;
+    
+     
 }
