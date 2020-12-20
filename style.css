@@ -18,3 +18,9 @@ textarea{
     font-family: monospace;
     font-weight: 600;
 }
+.header{
+    height: 400px;
+    width: 100%;
+    background-image: url("../Blogging_Portal/images/hill.jpg");
+     background-size: 100%;
+}
