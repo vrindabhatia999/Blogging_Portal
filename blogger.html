@@ -19,12 +19,23 @@
      
 </head>
 <body style="background-color: pink;">
-<div class="text-center mt-5">
-    <textarea rows="10" cols="100" id="area" placeholder="Write your blog here..."></textarea><br>
-    <button type="button" class="btn btn-success" onclick="addToBlog()">ADD</button>
-</div><br><br>
-<div class="text-center container" style="background-color: rgb(223, 110, 166); font-family: cursive; font-size: 40px;" id="YourBlog">Your blogs-</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="text-center mt-5">
+            <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..."></textarea><br>
+            <button type="button" class="btn btn-success" onclick="addToBlog()">ADD</button>
+            </div>
+    </div>
+
+    <div class="col-md-6">
+<div class="text-center container mt-5  " style="background-color: rgb(223, 110, 166); font-family: cursive; font-size: 40px; " id="YourBlog">Your blogs-</div>
 <div id="blogs" class="container text-center" style="background-color: rgb(226, 126, 176); "></div>
+    </div>
+    
+
+</div>    <br><br>
+
 
 <script src="login.js"></script>
 <script>
