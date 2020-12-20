@@ -34,8 +34,9 @@ function validate(){
 function addToBlog(){
     var area=document.getElementById('area').value;
     var blog=document.getElementById('blogs');
+    var title=document.getElementById('title').value;
 
-    blog.innerHTML=area;
+    blog.innerHTML="<h5>"+title+":"+"</h5>"+area;
     
      
 }
