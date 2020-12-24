@@ -20,7 +20,14 @@ textarea{
 }
 .header{
     height: 400px;
-    width: 100%;
+     
     background-image: url("../Blogging_Portal/images/hill.jpg");
-     background-size: 100%;
+    background-size: 100%;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+     
 }
