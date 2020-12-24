@@ -19,38 +19,78 @@
      
 </head>
 <body >
-    <div class="header">
-        <br>
-        <br>
-        <br>
-        <br>
-        WELCOME
+    <div class="bgimg">
 
-    </div>
+        <nav class="navbar navbar-expand-md bg-info navbar-dark sticky-top ">
+            <div class="container">
+                <a href="" class="navbar-brand text-warning font-weight-bold">  By Vrinda</a>
+                <button class="navbar-toggler active" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<div class="row">
-    <div class="col-md-6">
+                <div class="collapse navbar-collapse text-center font-weight-bold" id="collapsenavbar">
+                    <ul class="navbar-nav  ml-auto ">
+                        <li class="nav-item">
+                            <a href="#sec1" class="nav-link text-white">About</a>
+                        </li>
+
+                          
+                        <li class="nav-item">
+                            <a href="#sec3" class="nav-link text-white">Contact</a>
+                        </li>
+
+                         
+                      
+                    </ul>
+                    
+                </div>
+         </div>
+       </nav>
+        
+       <div class="container text-center text-white headerset" >
+           <h2>Welcome to Blogging Portal</h2>
+           <h1>Start By submitting you first blog..</h1>
+           <button type="button" class="btn btn-warning " style="font-weight: bold;"><a href="index.html" style="color: rgb(252, 249, 249); font-size: 20px;">View Your blog</a></button>
+           
+           
+       </div>
+
+
+
+   </div><br><br><br><br><br><br>
+
+ 
+    <div class="container">
         <div class="text-center mt-5">
             <label style="font-family: cursive; font-size: 20px;"> <strong>Title:</strong></label><input type="text" style=" background-color: rgb(247, 214, 247);" id="title" placeholder="Title for blog"><br><br>
             <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..."></textarea><br>
-            <button type="button" class="btn btn-success" onclick="addToBlog()">ADD</button>
+            <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
             </div>
     </div>
 
-    <div class="col-md-6">
-<div class="text-center container mr-5  " style="background-color: rgb(223, 110, 166); font-family: cursive; font-size: 20px; " id="YourBlog">Your blogs(click to load)</div>
-<div id="blogs" class="container text-center" style="background-color: rgb(226, 126, 176); font-family: cursive; "></div>
+    
+    
+
+     <br><br>
+     <div>
+        <div class='container text-center' id="YourBlog"> 
+            View your bogs
+             </div>
+             <div class='container text-center' id="blogs"> 
+                 hhhh
+                 </div>
+                  
     </div>
     
 
-</div>    <br><br>
+    <script>
+        $('#YourBlog').click(function(){
+            $('#blogs').slideToggle();
+        })
+    </script>
 
 
 <script src="login.js"></script>
-<script>
-    $('#YourBlog').click(function(){
-        $('#blogs').slideToggle();
-    })
-</script>
+
 </body>
 </html>
