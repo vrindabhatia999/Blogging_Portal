@@ -29,18 +29,21 @@ function validate(){
 
 
 }
+var blog=document.getElementById('blogs');
+blog.style.backgroundColor='#a1aec4'
 
  
 function addToBlog(){
 
 
         var area=document.getElementById('area').value;
-        var blog=document.getElementById('blogs');
+       
         var title=document.getElementById('title').value;
     
-        blog.innerHTML="<h5>"+title+":"+"</h5>"+area;
+        blog.innerHTML="<h6>"+"<u>"+title+"</u>"+":"+"</h6>"+area;
 }  
         
+
         
     
     
