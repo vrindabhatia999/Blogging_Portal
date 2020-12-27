@@ -31,6 +31,8 @@ function validate(){
 }
 var blog=document.getElementById('blogs');
 blog.style.backgroundColor='#a1aec4'
+var yb=document.getElementById('YourBlog')
+yb.style.fontSize='30px'
 
  
 function addToBlog(){
