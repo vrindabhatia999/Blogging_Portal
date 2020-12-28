@@ -1,3 +1,4 @@
+var index =1;
 function validate(){
     var username=document.getElementById("uname");
     var pass=document.getElementById('pass').value;
@@ -30,7 +31,7 @@ function validate(){
 
 }
 var blog=document.getElementById('blogs');
-blog.style.backgroundColor='#a1aec4'
+blog.style.backgroundColor='#5bc0de'
 var yb=document.getElementById('YourBlog')
 yb.style.fontSize='30px'
 
@@ -39,14 +40,15 @@ function addToBlog(){
 
 
         var area=document.getElementById('area').value;
-       
         var title=document.getElementById('title').value;
-    
-        blog.innerHTML="<h6>"+"<u>"+title+"</u>"+":"+"</h6>"+area;
-}  
         
+        blog.innerHTML=blog.innerHTML + "\n"+"<h6>"+"<u>"+index+"."+" "+title+"</u>"+":"+"</h6>"+"<h6>"+area+"</h6>";
+        index++;
+        
+    }  
+       
 
-        
+    
     
     
  

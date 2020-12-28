@@ -62,7 +62,7 @@
  
     <div class="container">
         <div class="text-center mt-5">
-            <label style="font-family: cursive; font-size: 20px;"> <strong>Title:</strong></label><input type="text" style=" background-color: rgb(247, 214, 247);" id="title" placeholder="Title for blog"><br><br>
+            <label style="font-family: cursive; font-size: 20px;"> <strong>Title:</strong></label><input type="text" style=" background-color: #b9d2da" id="title" placeholder="Title for blog"><br><br>
             <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..."></textarea><br>
             <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
             </div>
@@ -72,12 +72,12 @@
     
 
      <br><br><br><br><br><br><br><br><br><br>
-     <div>
-        <div class='container text-center' id="YourBlog"> 
-            View your bogs
+     <div class="div1">
+        <div class='container text-center rounded' id="YourBlog" style="background-color: #5bc0de;"> 
+            <h3 class="bg-white">View your bogs</h3>
              </div>
-             <div class='container text-center' id="blogs"> 
-                 hhhh
+             <div class='container text-center rounded' id="blogs"> 
+                 
                  </div>
                   
     </div>
@@ -91,6 +91,61 @@
 
 
 <script src="login.js"></script>
+
+ 
+<!-- Site footer -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Blogging Portal <i>Gives your ideas the space. </i> Blogging Portal allows your to create and your ideas in form a blog.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
 </body>
 </html>
