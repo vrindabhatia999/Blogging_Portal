@@ -42,7 +42,7 @@ function addToBlog(){
         var area=document.getElementById('area').value;
         var title=document.getElementById('title').value;
         
-        blog.innerHTML=blog.innerHTML + "\n"+"<h6>"+"<u>"+index+"."+" "+title+"</u>"+":"+"</h6>"+"<h6>"+area+"</h6>";
+        blog.innerHTML=blog.innerHTML + "\n"+"<h6>"+"<u>"+index+"."+" "+title+ "</u>"+":"+"</h6>"+"<h6>"+area+"</h6>";
         index++;
         
     }  
