@@ -36,16 +36,47 @@ var yb=document.getElementById('YourBlog')
 yb.style.fontSize='30px'
 
  
-function addToBlog(){
+ 
 
 
-        var area=document.getElementById('area').value;
-        var title=document.getElementById('title').value;
+    var index = 1
+
+    function deleteOne(row){
+    console.log(row.parentNode.parentNode.rowIndex)
+    document.querySelector("table").deleteRow(row.parentNode.parentNode.rowIndex)
+    
+    }
+    
+    function addToBlog(){
+        if(document.getElementById("title").value == "" || document.getElementById("area").value == ""){
+          alert("Please Enter Full Details")
+        }
+        else{
+           var name = document.querySelector("#title")
+           var phone = document.getElementById("area").value
+           var dummy = document.getElementsByTagName("table")
+           var table = document.querySelector('table')
+    
+    
+           console.log(dummy)
+           console.log(table)
+    
+           table.innerHTML +=
+           `
+           <tr>
+            <td>${index}</td>
+            <td> ${name.value}</td>
+            <td>${phone}</td>
+            <td><button onclick="deleteOne(this)">Delete</button></td>
+            </tr>
+           `;
+    
+           index++;
+    
+        }
+    }
         
-        blog.innerHTML=blog.innerHTML + "\n"+"<h6>"+"<u>"+index+"."+" "+title+ "</u>"+":"+"</h6>"+"<h6>"+area+"</h6>";
-        index++;
-        
-    }  
+ 
        
 
     
