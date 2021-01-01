@@ -67,7 +67,8 @@ yb.style.fontSize='30px'
             <td>${index}</td>
             <td> ${name.value}</td>
             <td>${phone}</td>
-            <td><button onclick="deleteOne(this)">Delete</button></td>
+            <td><button onclick="deleteOne(this)" class="btn btn-danger">Delete</button></td>
+            <td><button onclick="edit(this)" class="btn btn-danger">Edit</button></td>
             </tr>
            `;
     
@@ -75,6 +76,19 @@ yb.style.fontSize='30px'
     
         }
     }
+
+function add(){
+    var dummy = document.getElementsByTagName("table")
+    var table = document.querySelector('table')
+    var l1=document.getElementById("l1");
+    var text =document.getElementById("area").value;
+    l1.innerHTML= dummy+table;
+    // l1.appendChild(text);
+}
+function edit(row){
+console.log(row.parentNode.parentNode.querySelector("td"))
+}
+
         
  
        
