@@ -63,10 +63,15 @@
     <div class="container">
         <div class="text-center mt-5">
             <label style="font-family: cursive; font-size: 20px;"> <strong>Title:</strong></label><input type="text" style=" background-color: #b9d2da" id="title" placeholder="Title for blog"><br><br>
-            <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..."></textarea><br>
-            <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
+            
+              <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..." ></textarea><br>
+              <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
+             
+         
             </div>
-    </div>
+    </div><br>
+    <input type='file' />
+<br><img id="myImg" src="#" alt="your image" height=200 width=100>
 
     
     
@@ -84,14 +89,31 @@
            </tr>
           </thead>
        </table>
-   </div>
+   </div><br><br><br><br>
+
+
+ 
+   
     
 
     <script>
-        $('#YourBlog').click(function(){
-            $('#blogs').slideToggle();
-        })
-    </script>
+      window.addEventListener('load', function() {
+        document.querySelector('input[type="file"]').addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                var img = document.querySelector('img');  // $('img')[0]
+                img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+                img.onload = imageIsLoaded;
+            }
+        });
+      });
+      
+      function imageIsLoaded() { 
+        alert(this.src);  // blob url
+        // update width and height ...
+      }
+      
+      </script>
+  
 
 
 <script src="login.js"></script>

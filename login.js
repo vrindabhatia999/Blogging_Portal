@@ -53,7 +53,7 @@ yb.style.fontSize='30px'
         }
         else{
            var name = document.querySelector("#title")
-           var phone = document.getElementById("area").value
+           var phone = document.getElementById("area").value;
            var dummy = document.getElementsByTagName("table")
            var table = document.querySelector('table')
     
@@ -90,6 +90,7 @@ console.log(row.parentNode.parentNode.querySelector("td"))
 }
 
         
+
  
        
 
