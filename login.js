@@ -91,6 +91,8 @@ console.log(row.parentNode.parentNode.querySelector("td"))
 
         
 
+  
+
  
        
 

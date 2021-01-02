@@ -66,12 +66,13 @@
             
               <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..." ></textarea><br>
               <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
+              <input type='file' />
+<br><img id="myImg" src="#" alt="your image" height=200 width=300>
              
          
             </div>
     </div><br>
-    <input type='file' />
-<br><img id="myImg" src="#" alt="your image" height=200 width=100>
+    
 
     
     
@@ -108,10 +109,9 @@
       });
       
       function imageIsLoaded() { 
-        alert(this.src);  // blob url
+        alert("upload this image");  // blob url
         // update width and height ...
       }
-      
       </script>
   
 
