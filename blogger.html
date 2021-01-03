@@ -78,18 +78,12 @@
  
          
             </div>
-    </div><br>
-    
-
-    
-    
-
-     <br><br><br><br><br><br><br><br><br><br>
+    </div> 
       
-    <div  class="text-center  " id ="j2" style="margin-left: 30%;">
-      <table class="  text-center">
-          <thead>
-           <tr>
+    <div  class="container-fluid " id ="j2" style=" height:700px; width:auto;  ">
+      <table class="  text-center" >
+          <thead >
+           <tr style=" padding: 17%">
                <th>S.NO</th>
                <th> Title </th>
                <th> Blog </th>
@@ -97,14 +91,14 @@
            </tr>
           </thead>
        </table>
-   </div><br><br><br><br>
+   </div> 
 
 
  
    
     
 
-    <script>
+    <script type="text/javascript">
       function readURL(input) {
 
         if (input.files && input.files[0]) {
@@ -128,16 +122,11 @@
 setInterval(
   function () {
     var j1=document.getElementById("j1");
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    j1.style.backgroundColor = "#"+randomColor;
+    <!-- var randomColor = Math.floor(Math.random()*16777215).toString(16); -->
+    j1.style.backgroundColor = "#"+ ((1<<24)*(Math.random()+3)|0).toString(16).substr(1);
   },2000);
 
-  setInterval(
-  function () {
-    var j2=document.getElementById("j2");
-    var randomColor = Math.floor(Math.random()*16777224).toString(16);
-    j2.style.backgroundColor = "#"+randomColor;
-  },2000);
+   
 
       </script>
   

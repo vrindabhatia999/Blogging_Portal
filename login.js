@@ -58,8 +58,7 @@ yb.style.fontSize='30px'
            var table = document.querySelector('table')
     
     
-           console.log(dummy)
-           console.log(table)
+           
     
            table.innerHTML +=
            `
@@ -77,9 +76,12 @@ yb.style.fontSize='30px'
         }
     }
 
+
     function display(row) {
-        localStorage["date"] = row.parentNode.parentNode.querySelector("td");
+
+        localStorage.setItem("data","<p>Vrinda Bhatia is love</p>");
         window.location.href = "text.html"
+          
     }
 
 function add(){
@@ -123,6 +125,8 @@ setInterval(
   },2000);
 
       
+var j2=document.getElementById("j2");
+j2.style.backgroundColor="#000";
 
         
 
