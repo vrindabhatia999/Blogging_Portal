@@ -94,7 +94,35 @@ function edit(row){
 console.log(row.parentNode.parentNode.querySelector("td"))
 }
 
+ 
+      function readURL(input) {
 
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                document.getElementById('myimg').setAttribute('src',e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    document.getElementById('imgSel').onchange = function () { //set up a common class
+        readURL(this);
+    };
+
+
+    
+setInterval(
+  function () {
+    var j1=document.getElementById("j1");
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    j1.style.backgroundColor = "#"+randomColor;
+  },2000);
+
+      
 
         
 

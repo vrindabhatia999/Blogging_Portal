@@ -86,7 +86,7 @@
 
      <br><br><br><br><br><br><br><br><br><br>
       
-    <div  class="text-center  " style="margin-left: 30%;">
+    <div  class="text-center  " id ="j2" style="margin-left: 30%;">
       <table class="  text-center">
           <thead>
            <tr>
@@ -130,6 +130,13 @@ setInterval(
     var j1=document.getElementById("j1");
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
     j1.style.backgroundColor = "#"+randomColor;
+  },2000);
+
+  setInterval(
+  function () {
+    var j2=document.getElementById("j2");
+    var randomColor = Math.floor(Math.random()*16777224).toString(16);
+    j2.style.backgroundColor = "#"+randomColor;
   },2000);
 
       </script>
