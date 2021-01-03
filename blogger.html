@@ -50,28 +50,28 @@
        <div class="container text-center text-white headerset" >
            <h2>Welcome to Blogging Portal</h2>
            <h1>Start By submitting you first blog..</h1>
-           <button type="button" class="btn btn-warning " style="font-weight: bold;" onclick="add()"> View Your blog </button>
+           <button type="button" class="btn btn-warning " style="font-weight: bold;"  ><a href="#title">Create Your blog</a>  </button>
            
            
        </div>
 
 
 
-   </div><br><br><br><br><br><br>
+   </div> 
 
  
-    <div class="container">
-        <div class="text-center mt-5">
+    <div class="container-fluid"  id="j1" style="  height:700px; width:auto; ">
+        <div class="text-center " style=" padding: 17%">
             <label style="font-family: cursive; font-size: 20px;"> <strong>Title:</strong></label><input type="text" style=" background-color: #b9d2da" id="title" placeholder="Title for blog"><br><br>
             
             <input class="file btn btn-info" type='file' id="imgSel" />  
 
             <div id="textarea"  contenteditable> 
             
-              <!-- <img contenteditable="false" style="width:300px; height:100px;" id="myimg"/>
+              <img contenteditable="false" style="width:300px; height:100px;" id="myimg"/>
               Write Your blog..
                
-             -->
+            
             </div>
               <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
                
@@ -122,6 +122,16 @@
     document.getElementById('imgSel').onchange = function () { //set up a common class
         readURL(this);
     };
+
+
+    
+setInterval(
+  function () {
+    var j1=document.getElementById("j1");
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    j1.style.backgroundColor = "#"+randomColor;
+  },2000);
+
       </script>
   
 
