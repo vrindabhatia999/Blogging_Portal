@@ -26,8 +26,10 @@
 </body>
 
 <script type="text/javascript">
-  var l1=document.getElementById('l1');
-  l1.innerHTML=document.getElementById("area").value;
+  let value = localStorage["date"]
+  console.log(value)
+  let element = document.querySelector("#l1")
+  element.innerHTML = value
 </script>
 </html>
 

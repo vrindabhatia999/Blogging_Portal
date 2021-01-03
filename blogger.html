@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Login Form</title>
+    <title>Blogging Portal</title>
     
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
@@ -64,11 +64,18 @@
         <div class="text-center mt-5">
             <label style="font-family: cursive; font-size: 20px;"> <strong>Title:</strong></label><input type="text" style=" background-color: #b9d2da" id="title" placeholder="Title for blog"><br><br>
             
-              <textarea rows="10" cols="80" id="area" placeholder="Write your blog here..." ></textarea><br>
+            <input class="file btn btn-info" type='file' id="imgSel" />  
+
+            <div id="textarea"  contenteditable> 
+            
+              <!-- <img contenteditable="false" style="width:300px; height:100px;" id="myimg"/>
+              Write Your blog..
+               
+             -->
+            </div>
               <button type="button" class="btn btn-success" id="btn1" onclick="addToBlog()">ADD</button>
-              <input type='file' />
-<br><img id="myImg" src="#" alt="your image" height=200 width=300>
-             
+               
+ 
          
             </div>
     </div><br>
@@ -98,20 +105,23 @@
     
 
     <script>
-      window.addEventListener('load', function() {
-        document.querySelector('input[type="file"]').addEventListener('change', function() {
-            if (this.files && this.files[0]) {
-                var img = document.querySelector('img');  // $('img')[0]
-                img.src = URL.createObjectURL(this.files[0]); // set src to blob url
-                img.onload = imageIsLoaded;
+      function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                document.getElementById('myimg').setAttribute('src',e.target.result);
             }
-        });
-      });
-      
-      function imageIsLoaded() { 
-        alert("upload this image");  // blob url
-        // update width and height ...
-      }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    document.getElementById('imgSel').onchange = function () { //set up a common class
+        readURL(this);
+    };
       </script>
   
 

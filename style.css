@@ -29,6 +29,19 @@ textarea{
 	padding-top: 200px;
     box-sizing: border-box;}
 
+#textarea {
+      -moz-appearance: textfield-multiline;
+      -webkit-appearance: textarea;
+      border: 1px solid gray;
+      font: medium -moz-fixed;
+      font: -webkit-small-control;
+      height: 28px;
+      overflow: auto;
+      padding: 2px;
+      resize: both;
+      width: 400px;
+  }
+
 
 
 
@@ -200,4 +213,9 @@ textarea{
 
 .div1{
     margin-bottom: 35%;
+}
+#textarea{
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }

@@ -48,12 +48,12 @@ yb.style.fontSize='30px'
     }
     
     function addToBlog(){
-        if(document.getElementById("title").value == "" || document.getElementById("area").value == ""){
+        if(document.getElementById("title").value == "" || document.getElementById("textarea").value == ""){
           alert("Please Enter Full Details")
         }
         else{
            var name = document.querySelector("#title")
-           var phone = document.getElementById("area").value;
+           var phone = document.getElementById("textarea").innerHTML;
            var dummy = document.getElementsByTagName("table")
            var table = document.querySelector('table')
     
@@ -65,7 +65,7 @@ yb.style.fontSize='30px'
            `
            <tr>
             <td>${index}</td>
-            <td> ${name.value}</td>
+            <td style="margin:20px; cursor:pointer" onclick="display(this)" >${name.value}</a></td>
             <td>${phone}</td>
             <td><button onclick="deleteOne(this)" class="btn btn-danger">Delete</button></td>
             <td><button onclick="edit(this)" class="btn btn-danger">Edit</button></td>
@@ -75,6 +75,11 @@ yb.style.fontSize='30px'
            index++;
     
         }
+    }
+
+    function display(row) {
+        localStorage["date"] = row.parentNode.parentNode.querySelector("td");
+        window.location.href = "text.html"
     }
 
 function add(){
@@ -88,6 +93,7 @@ function add(){
 function edit(row){
 console.log(row.parentNode.parentNode.querySelector("td"))
 }
+
 
         
 
