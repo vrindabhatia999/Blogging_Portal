@@ -125,8 +125,8 @@ setInterval(
   },2000);
 
       
-var j2=document.getElementById("j2");
-j2.style.backgroundColor="#000";
+  var j2=document.getElementById("j2");
+  j2.style.backgroundColor="#000080";
 
         
 
