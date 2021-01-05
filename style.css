@@ -219,3 +219,9 @@ textarea{
   margin-right: auto;
   justify-content: center;
 }
+#j2{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+   
+}
