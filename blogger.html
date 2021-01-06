@@ -19,7 +19,7 @@
      
 </head>
 <body >
-  <script src="login.js"> </script>
+
     <div class="bgimg">
 
         <nav class="navbar navbar-expand-md bg-info navbar-dark sticky-top ">
@@ -85,7 +85,7 @@
       <table class="  text-center" >
           <thead >
            <tr style=" padding: 17%">
-               <th>S.NO</th>
+               <th id="h1">S.NO</th>
                <th> Title </th>
                <th> Blog </th>
                <th> Actions </th>
@@ -123,7 +123,7 @@
 setInterval(
   function () {
     var j1=document.getElementById("j1");
-    <!-- var randomColor = Math.floor(Math.random()*16777215).toString(16); -->
+  
     j1.style.backgroundColor = "#"+ ((1<<24)*(Math.random()+3)|0).toString(16).substr(1);
   },2000);
 
@@ -195,5 +195,6 @@ setInterval(
 </footer>
 
 </body>
+<script src="login.js"> </script>
 
 </html>

@@ -49,7 +49,7 @@ yb.style.fontSize='30px'
     
     function addToBlog(){
         if(document.getElementById("title").value == "" || document.getElementById("textarea").value == ""){
-          alert("Please Enter Full Details")
+          alert("Please Enter Full Detail")
         }
         else{
            var name = document.querySelector("#title")
@@ -127,6 +127,10 @@ setInterval(
       
   var j2=document.getElementById("j2");
   j2.style.backgroundColor="#000080";
+
+
+  var h1=document.getElementById("h1");
+  h1.style.boxShadow="2px 2px 2px blue";
 
         
 
