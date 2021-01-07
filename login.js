@@ -131,9 +131,7 @@ setInterval(
 
   var h1=document.getElementById("h1");
   h1.style.boxShadow="2px 2px 2px blue";
-
-        
-
+ 
   
 
  
