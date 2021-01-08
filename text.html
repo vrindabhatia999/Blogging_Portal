@@ -11,6 +11,7 @@
 	</script> 
 	
 	<style> 
+
 		body{ 
 		padding:10% 3% 10% 3%; 
 		text-align:center; 
@@ -22,6 +23,20 @@
 		h1{ 
 		color: #32a852; 
 		} 
+		h1 { 
+			height: 60px; 
+			padding: 0;
+			margin: 0;
+		  }
+		  
+			p { display: inline-block; }
+			.font-size-label { margin-right: 20px; }
+			#font-size { margin: 0 5px; }
+			button { 
+			  width: 30px;
+			  height: 30px;
+			}
+		  
 		.mode { 
 			float:right; 
 		} 
@@ -48,7 +63,7 @@
 			color: #e6e6e6; 
 		} 
 		.dark1{ 
-			background-color: rgb(206, 124, 223); 
+			background-color: rgb(192, 148, 188); 
 			color: #e6e6e6; 
 		} 
 	 
@@ -57,16 +72,15 @@
 
 <body> 
 	<div class="mode"> 
-		Dark mode:			 
+		N's Fav mode:			 
 		<span class="change">OFF</span> 
 		<br><br>
-		Purple mode
-		<span class="change1">Purple</span> 
+		V's fav mode
+		<span class="change1">OFF</span> 
 	</div> 
 	
 	<div style="text-align: center;"> 
-		<h1 style="text-align: center;">Vrinda's Mode-Changer</h1> 
-		<p><i>Happy environment</i></p> 
+		 
 		<h3>Light and Dark Mode</h3> 
 		
 		<img src= 
@@ -76,6 +90,14 @@
 			to move to dark mode. 
 		</p> 
 	</div> 
+
+	<div class="container">
+		<h1>Resize Me</h1>
+		<p class="font-size-label">Font Size</p>
+		<button id="up">+</button>
+		<p id="font-size"></p>
+		<button id="down">-</button>
+	  </div>
 	
 	<script src="Jquery.js"></script> 
 </body> 

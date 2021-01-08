@@ -16,6 +16,15 @@ $( ".change1" ).on("click", function() {
         $( ".change1" ).text( "ON" ); 
     } 
 }); 
+$( ".j3" ).on("click", function() { 
+    if( $( "#j2" ).hasClass( "dark" )) { 
+        $( "#j2" ).removeClass( "dark" ); 
+        $( ".change1" ).text( "OFF" ); 
+    } else { 
+        $( "#j2" ).addClass( "dark" ); 
+        $( ".change1" ).text( "ON" ); 
+    } 
+}); 
 
 
 setInterval(
@@ -25,8 +34,63 @@ setInterval(
       j1.style.backgroundColor = "#"+ ((1<<24)*(Math.random()+3)|0).toString(16).substr(1);
     },2000);
   
-    var j2=document.getElementById("j2");
-    j2.style.backgroundColor="#305354"
+
+    
+function getSize() {
+        size = $( "h1" ).css( "font-size" );
+        size = parseInt(size, 10);
+        $( "#font-size" ).text(  size  );
+      }
+      
+      //get inital font size
+getSize();
+      
+      $( "#up" ).on( "click", function() {
+      
+        // parse font size, if less than 50 increase font size
+        if ((size + 2) <= 50) {
+          $( "h1" ).css( "font-size", "+=2" );
+          $( "#font-size" ).text(  size += 2 );
+        }
+      });
+      
+      $( "#down" ).on( "click", function() {
+        if ((size - 2) >= 12) {
+          $( "h1" ).css( "font-size", "-=2" );
+          $( "#font-size" ).text(  size -= 2  );
+        }
+      });
+
+
+
+function getSize1() {
+        size = $( "h1" ).css( "font-size" );
+        size = parseInt(size, 10);
+        $( "#font-size" ).text(  size  );
+      }
+      
+      //get inital font size
+getSize1();
+      
+      $( "#up" ).on( "click", function() {
+      
+        // parse font size, if less than 50 increase font size
+        if ((size + 2) <= 50) {
+          $( "h1" ).css( "font-size", "+=2" );
+          $( "#font-size" ).text(  size += 2 );
+        }
+      });
+      
+      $( "#down" ).on( "click", function() {
+        if ((size - 2) >= 12) {
+          $( "h1" ).css( "font-size", "-=2" );
+          $( "#font-size" ).text(  size -= 2  );
+        }
+      });
+
+
+      var j2=document.getElementById("j2");
+  
     j2.style.alignContent="center"
     j2.style.alignItems="center"
-    j2.style.justifyContent="center"
+j2.style.justifyContent="center";
