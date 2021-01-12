@@ -89,6 +89,10 @@ getSize1();
       });
 
 
+
+
+
+
       var j2=document.getElementById("j2");
   
     j2.style.alignContent="center"
