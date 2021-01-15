@@ -81,7 +81,7 @@ function validate(){
  const output = document.querySelector("#speed");
  
  // global variables
- let screen, starsElements, starsParams = { speed: 10, number: 300, extinction: 4 };
+ let screen, starsElements, starsParams = { speed: 15, number: 300, extinction: 4 };
  
  // run stars
  setupStars();
@@ -146,7 +146,7 @@ function validate(){
  
  // redraw the frame
  function updateStars() {
-     starsCtx.fillStyle = "black";
+     starsCtx.fillStyle = "#343d52";
      starsCtx.fillRect(0, 0, stars.width, stars.height);
      starsElements.forEach(function (s) {
          s.show();
