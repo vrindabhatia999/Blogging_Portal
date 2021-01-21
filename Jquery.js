@@ -26,6 +26,20 @@ $( ".j3" ).on("click", function() {
     } 
 }); 
 
+$( function() {
+  $( document ).tooltip();
+} );
+
+
+$("#header").on({
+ mouseenter:function(){
+    $(this).css("text-shadow","2px 2px 2px purple");
+  },
+  mouseleave:function(){
+
+    $(this).css("text-shadow","2px 2px 2px white")
+  }
+});
 
 setInterval(
     function () {
