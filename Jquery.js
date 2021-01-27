@@ -34,7 +34,7 @@ $( function() {
 $("#header").on({
  mouseenter:function(){
     $(this).css("text-shadow","2px 2px 2px purple" );
-    $(this).css("box-shadow","2px 2px 2px grey");
+    $(this).css("box-shadow","1px 1px 1px grey");
   },
   mouseleave:function(){
 
