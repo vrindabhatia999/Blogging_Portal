@@ -33,13 +33,19 @@ $( function() {
 
 $("#header").on({
  mouseenter:function(){
-    $(this).css("text-shadow","2px 2px 2px purple");
+    $(this).css("text-shadow","2px 2px 2px purple" );
+    $(this).css("box-shadow","2px 2px 2px grey");
   },
   mouseleave:function(){
 
     $(this).css("text-shadow","2px 2px 2px white")
+    $(this).css("box-shadow","2px 2px 2px white");
+  },
+  mousemove:function(){
+    $(this).fadeTo("fast",0.7)
   }
 });
+ 
 
 setInterval(
     function () {
